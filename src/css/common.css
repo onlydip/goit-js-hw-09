@@ -16,3 +16,12 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+span.value {
+  font-size: 60px;
+}
+
+span.label {
+  text-transform: uppercase;
+}
