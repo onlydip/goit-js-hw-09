@@ -1,7 +1,7 @@
 
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
-import Notiflix from 'notiflix';
+// import Notiflix from 'notiflix';
 import { Confirm } from 'notiflix/build/notiflix-confirm-aio';
 
 
@@ -21,7 +21,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
       if(selectedDates[0] < Date.now()){
-          Confirm.show("SORRY",
+          Confirm.show("SORRY!!!!!!!!!",
               "Please choose a date in the future",
               "CONFIRM");
            selectedDate = null;

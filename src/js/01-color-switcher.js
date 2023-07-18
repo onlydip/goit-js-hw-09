@@ -9,6 +9,7 @@ stopBTN.addEventListener('click', stopColorChange);
 function startColorChange() {
   if (timeId === null) {
     startBTN.disabled = true;
+    startBTN.classList.add('active')
     timeId = setInterval(changeBackgroundColor, 1000);
   }
 }
@@ -16,6 +17,7 @@ function startColorChange() {
 function stopColorChange() {
   if (timeId !== null) {
     startBTN.disabled = false;
+  startBTN.classList.remove('active');
     clearInterval(timeId);
     timeId = null;
   }
